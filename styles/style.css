@@ -1,0 +1,85 @@
+/* 800 < width  */
+.main-header {
+  background-color: #d5d6db;
+  padding: 15px;
+  margin-bottom: 15px;
+}
+
+body {
+  background-color: #474e5d;
+}
+
+.row {
+  display: flex;
+  align-items: flex-start;
+}
+
+.column {
+  margin-left: 30px;
+  display: block;
+}
+
+.subtitle {
+  flex: 2;
+  margin-left: 10px;
+  margin-top: 15px;
+  font-size: large;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.753);
+
+}
+
+.circle {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 1px solid #2A0202;
+  object-fit: cover;
+}
+
+h3 {
+  margin-left: 15px;
+  margin-top: 5px;
+}
+
+h1 {
+  /* так лучше */
+  line-height: 1.02;
+  margin: 5px;
+  font-size: 35px;
+}
+
+p,
+article {
+  text-align: left;
+  flex: 3;
+  font-size: 18px;
+  padding-top: 2px;
+}
+
+.information {
+  margin-left: 15px;
+  font-size: large;
+  display: grid;
+}
+
+.block {
+  margin-top: 12px;
+  margin-bottom: 12px;
+  padding: 15px;
+  background-color: #d5d6db;
+  display: flex;
+  margin-left: auto;
+  margin-top: auto;
+}
+
+.layout {
+  width: 800px;
+  margin: auto;
+  position: relative;
+}
+
+.rounded {
+  margin-bottom: 12px0;
+  border-radius: 12px;
+}
