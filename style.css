@@ -1,0 +1,50 @@
+
+html,
+body {
+  margin-right: 15px;
+  margin-left: 24px;
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+
+header.main-header{
+  padding-top: 15px;
+  display: flex;
+  align-items: flex-start;
+}
+header.subtitle {
+  margin-left: 10px;
+  margin-top: 15px;
+  font-size: large;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.596);
+}
+.round-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 1px solid rgb(42, 2, 2);
+  background-size: auto 300px;
+  object-fit: cover;
+}
+
+
+h1 {
+  line-height: 1.02;
+  margin: 5px;
+  padding-left: 15px;
+  font-size: 35px;
+}
+
+
+#line {
+  height: 2px;
+  background-color: rgba(0, 0, 0, 0.719);
+  margin-bottom: 10px;
+}
+p{
+  font-size: 18px;
+  padding-top: 2px;
+}
