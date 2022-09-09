@@ -1,0 +1,65 @@
+/*html здесь лишний*/
+html,
+body {
+  /*отступы желательно делать в блоке внутри body а не у самого body, это чревато побочками с некоторым не очень хорошим js
+  т.е. лучше просто не допускать такого нигде*/
+  margin-right: 15px;
+  margin-left: 24px;
+
+  /*это не стандартный шрифт, его бы подключить в html*/
+  /*https://fonts.google.com/specimen/Montserrat?query=Montserrat*/
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+/*header здесь лишний к указанию, всё и так будет работать, лишний каскад ни к чему*/
+header.main-header{
+  padding-top: 15px;
+  display: flex;
+  align-items: flex-start;
+}
+header.subtitle {
+  margin-left: 10px;
+  margin-top: 15px;
+  font-size: large;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.596);
+}
+
+/*я по стилям вижу что это круглая картинка, лучше называть классы по их содержимому, не по стилям,*/
+/*в данном случае это .photo / .avatar / .userpic */
+.round-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  /*цвета пишут в hex, rgb за редким исключением, т.е. здесь #2A0202*/
+  border: 1px solid rgb(42, 2, 2);
+  object-fit: cover;
+
+  /*
+   такие вещи для контентных картинок лучше делать в <img height, width>, не через css
+   */
+  background-size: auto 300px;
+}
+
+
+h1 {
+  /*откуда такое желание сделать 0.02 разницы с обычным интервалом? выглядит как странный рандом не несущий смысла*/
+  line-height: 1.02;
+  margin: 5px;
+  padding-left: 15px;
+  font-size: 35px;
+}
+
+/*id не используются в вёрстке (также как и теги), только классы, стоит почитать БЭМ*/
+/*кол-во проблем явно превосходит кол-во мнимых плюсов от нарушения*/
+#line {
+  height: 2px;
+  background-color: rgba(0, 0, 0, 0.719);
+  margin-bottom: 10px;
+}
+p{
+  font-size: 18px;
+  padding-top: 2px;
+}
